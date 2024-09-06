@@ -1,0 +1,264 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'quicksand',sans-serif;
+}
+
+body {
+    background-color: azure;
+}
+
+header{
+    display: inline;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+
+.nama_merk {
+    flex: 1;
+    margin-top: 20px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    margin: 15px;
+    text-align: center;
+    
+}
+
+nav li {
+    margin: 10px;
+}
+
+nav a:hover{
+    color: chocolate;
+}
+
+.foto_hp {
+    margin-top: 90px;
+    margin-bottom: 120px;
+    width: 900px;
+}
+
+#produk {
+    background-color: antiquewhite;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);;
+}
+
+.spesifikasi {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.spesifikasi > * {
+    flex: 1 1 0;
+}
+
+.card {
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+.icon img {
+    width: 50px;
+    margin-top: 20px;
+    margin-bottom: -1px;
+}
+
+#fitur {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+#fitur h2 {
+    background-image: linear-gradient(90deg, rgb(236, 138, 51), rgb(223, 51, 25), rgb(164, 36, 108), rgb(81, 25, 224), rgb(54, 33, 250), rgb(81, 109, 221), rgb(0, 184, 177));
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    padding-top: 60px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+section p{
+    font-size: 20px;
+    margin: 10px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.camera_malam {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+
+.camera_malam img {
+    border-radius: 5px;
+    width: 400px;
+}
+
+.camera_cerah{
+    text-align: center;
+}
+
+section h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    background-image: linear-gradient(90deg, rgb(236, 138, 51), rgb(223, 51, 25), rgb(164, 36, 108), rgb(81, 25, 224), rgb(54, 33, 250), rgb(81, 109, 221), rgb(0, 184, 177));
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.camera_cerah img {
+    width: 750px;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+}
+
+.profile {
+    border: 1px black solid;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.poto-profile {
+    margin:  20px 20px 20px 20px;
+    border-radius: 50%;
+}
+
+.isi-profile {
+    margin: 10px 20px 20px 20px;
+    font-family: serif;
+    font-size: 20px;
+    list-style: none;
+    line-height: 40px;
+}
+
+.isi-profile a {
+    text-decoration: none;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #00a2c6;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width :800px) {
+
+    .logo img{
+        width: 80px;
+        height: 80px;
+    }
+
+    header {
+        flex-direction: column
+    }
+
+    .spesifikasi {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foto_hp {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        width: 400px;
+    }
+
+    nav {
+        background-color: white;
+        flex-wrap: wrap;
+        column-gap: .5rem;
+    }
+
+    #fitur h2 {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+    .camera_malam{
+        flex-direction: column;
+    }
+
+    .camera_cerah img {
+        width: 350px;
+    }
+
+    .poto-profile{
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .isi-profile {
+        margin: 10px;
+        font-size: 15;
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width :400px) {
+    .foto_hp {
+        margin-top: 120px;
+        margin-bottom: 120px;
+        width: 300px;
+    }
+
+    .poto-profile{
+        margin: 5px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .isi-profile {
+        margin: 10px;
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    .camera_malam img {
+        width: 300px;
+}
+}
